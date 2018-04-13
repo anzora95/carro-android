@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionDatos" >
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+    
+    <Button android:id="@+id/zbtn2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/gestUsu"
+	     android:layout_gravity="center_horizontal" />
+    
+    <Button android:id="@+id/zbtn1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/gestRest"
+	    android:layout_gravity="center_horizontal" />
+	
+	</LinearLayout>
+</RelativeLayout>

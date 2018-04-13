@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionGPS" >
+ <TextView
+            android:id="@+id/textoGPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true" >
+
+       
+        
+        <Button android:id="@+id/btnGuaGPS"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/crearL"
+            />
+        <Button android:id="@+id/btnModGPS"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/modiL"
+            />
+        <Button android:id="@+id/btnDelGPS"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/eliL"
+            />
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

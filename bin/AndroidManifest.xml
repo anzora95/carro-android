@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ues.fia.eisi.os_androino_car"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.IniciarSesion"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.Os_Andrino_Car_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.AccelActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.VoiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.GestionDatos"
+            android:label="@string/gestionar_datos"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.GestionUsuario"
+            android:label="@string/title_activity_gestion_usuario"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.CrearUsuario"
+            android:label="@string/title_activity_crear_usuario"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.ModificarUsuario"
+            android:label="@string/title_activity_modificar_usuario"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="ues.fia.eisi.os_androino_car.GestionGPS"
+            android:label="@string/title_activity_distanciagps"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+
+</manifest>

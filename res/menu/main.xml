@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/ctrlVoz"
+        android:showAsAction="never"
+        android:title="@string/menVoz"/>
+    <item
+        android:id="@+id/ctrlAcel"
+        android:showAsAction="never"
+        android:title="@string/menAcel"/>
+    <item
+        android:id="@+id/ctrlBtn"
+        android:showAsAction="never"
+        android:title="@string/menBotones"/>
+    <item
+        android:id="@+id/ConectarBT"
+        android:showAsAction="never"
+        android:title="@string/menConectar"/>
+    <item
+        android:id="@+id/Desconectar"
+        android:showAsAction="never"
+        android:title="@string/menDesconectar"/>
+    <item
+        android:id="@+id/ctrlUsu"
+        android:showAsAction="never"
+        android:title="@string/menUsuario"/>
+    <item
+        android:id="@+id/exit"
+        android:showAsAction="never"
+        android:title="@string/menSalir"/>
+</menu>

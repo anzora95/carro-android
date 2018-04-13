@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/EstadoBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Conexion BT" />
+
+            <TextView
+                android:id="@+id/SenAdelante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Sensor Frente" />
+
+            <TextView
+                android:id="@+id/SenTrasero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SenAdelante"
+                android:layout_centerInParent="true"
+                android:text="Sensor Atras" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/VerGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="latitud:\nLongitud\nLugar(Opcional)" />
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <ToggleButton
+                android:id="@+id/btnfreno"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="ItStop"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:background="@drawable/apagado"
+                android:textColor="@color/blanco"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnspeak"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="75dp"
+                android:onClick="speak"
+                android:background="@drawable/microfono"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="190dp"
+                android:layout_height="256dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <Button
+                    android:id="@+id/Derecha"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/boton_derecha"
+                    android:drawableTop="@null" />
+
+                <Button
+                    android:id="@+id/Izquierda"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/boton_izquierda"
+                    android:drawableTop="@null" />
+
+                <Button
+                    android:id="@+id/Atras"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/Derecha"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/boton_abajo"
+                    android:drawableTop="@null" />
+
+                <Button
+                    android:id="@+id/Adelante"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_above="@+id/Derecha"
+                    android:layout_centerHorizontal="true"
+                   android:background="@drawable/boton_arriba"
+                    android:drawableTop="@null"  />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/alerta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="19dp"
+                android:layout_marginTop="24dp"
+                android:text="" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
